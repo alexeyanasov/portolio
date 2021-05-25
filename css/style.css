@@ -64,6 +64,14 @@ body {
   color: #010101;
 }
 
+.white .circle circle {
+  fill: #fff;
+}
+
+.white .triangle path {
+  fill: #d40000;
+}
+
 .black {
   color: #f3f2f0;
   background-color: #232326;
@@ -73,6 +81,14 @@ body {
   color: #f3f2f0;
 }
 
+.black .circle circle {
+  fill: #d40000;
+}
+
+.black .triangle path {
+  fill: #fff;
+}
+
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
@@ -80,11 +96,24 @@ body {
   padding-right: 15px;
 }
 
-.name {
-  font-size: 28px;
+.main {
+  position: relative;
 }
 
-.title {
+.main .title-h1 {
+  position: relative;
+  z-index: 4;
+}
+
+.name {
+  font-size: 28px;
+
+  position: relative;
+  z-index: 3;
+  margin-bottom: 30px;
+}
+
+.title-h1 {
   font-size: 74px;
   font-weight: bold;
   text-transform: uppercase;
@@ -125,4 +154,123 @@ body {
 
 .nav__link:hover {
   color: #d40000;
+}
+
+.nav--info .nav__item {
+  position: relative;
+}
+
+.nav--info .nav__item::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 24px;
+  background-color: rgba(243, 242, 240, 0.5);
+  left: 0;
+  top: calc(50% - 12px);
+}
+
+.nav--info .nav__item:first-child:before {
+  display: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+.social__item:last-child {
+  position: relative;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project__img {
+  width: 16px;
+  height: 12px;
+  display: block;
+  background-image: url("../img/arrow.svg");
+  margin-left: 15px;
+}
+
+.title__h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill .title__h3 {
+  text-transform: uppercase;
+}
+
+.skill__item {
+  flex: 0 0 24%;
+}
+
+.skill .skill__description {
+  line-height: 150%;
+}
+
+.skill__description {
+  margin-top: 15px;
+}
+
+.section__steps {
+  padding-top: 180px;
+  padding-bottom: 198px;
+}
+
+.steps__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 150%;
+}
+
+.steps__title {
+  font-size: 28px;
+}
+
+.steps__title span {
+  margin-right: 45px;
+}
+
+.steps__description {
+  font-size: 16px;
+}
+
+.circle--main {
+  width: 253px;
+  height: 253px;
+  position: absolute;
+  left: -128px;
+  top: calc(50% - 126px);
+  z-index: 1;
+}
+
+.triangle {
+  position: absolute;
+  left: -151px;
+  top: 0;
+  z-index: 2;
+}
+
+.circle--nav {
+  width: 106px;
+  height: 106px;
+  position: absolute;
+  right: 38px;
+  top: calc(50% - 53px);
 }
