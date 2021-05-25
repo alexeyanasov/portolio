@@ -1,0 +1,128 @@
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ol li,
+ul li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* -------------- */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.white {
+  color: #010101;
+  background-color: #f3f2f0;
+}
+
+.white .nav__link {
+  color: #010101;
+}
+
+.black {
+  color: #f3f2f0;
+  background-color: #232326;
+}
+
+.black .nav__link {
+  color: #f3f2f0;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.name {
+  font-size: 28px;
+}
+
+.title {
+  font-size: 74px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.photo {
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.nav__item:first-child {
+  padding-left: 0;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+}
+
+.nav__link {
+  font-size: 14px;
+}
+
+.nav__link:hover {
+  color: #d40000;
+}
