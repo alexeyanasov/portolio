@@ -137,28 +137,28 @@ body {
 
 .name {
   font-size: 28px;
-
   position: relative;
   z-index: 3;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
 }
 
 .title-h1 {
   font-size: 74px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .photo {
-  margin-bottom: 120px;
+  margin-bottom: 136px;
   width: 100%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 44px;
+  padding-bottom: 73px;
 }
 
 .nav {
@@ -166,8 +166,8 @@ body {
 }
 
 .nav__item {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .nav__item:first-child {
@@ -180,6 +180,7 @@ body {
 
 .nav__link {
   font-size: 14px;
+  transition: 0.2s color ease;
 }
 
 .nav__link:hover {
@@ -204,11 +205,39 @@ body {
   display: none;
 }
 
+.nav--social .nav__item {
+  position: relative;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.nav--social .nav__item:last-child {
+  padding-right: 0;
+}
+
+.nav--social .nav__item::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 24px;
+  background-color: rgba(243, 242, 240, 0.5);
+  left: 0;
+  top: calc(50% - 12px);
+}
+
+.nav--social .nav__item:first-child:before {
+  display: none;
+}
+
+.nav--social .nav__link {
+  font-size: 16px;
+}
+
 .social {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
-  padding-bottom: 60px;
+  margin-top: 112px;
+  padding-bottom: 50px;
 }
 
 .social__item:last-child {
@@ -220,6 +249,13 @@ body {
   align-items: center;
   font-size: 16px;
   font-weight: 700;
+  padding-bottom: 11px;
+  transition: 0.2s border-bottom ease;
+  border-bottom: 2px solid transparent;
+}
+
+.project:hover {
+  border-bottom: 2px solid #f3f2f0;
 }
 
 .project__img {
@@ -238,17 +274,19 @@ body {
 }
 
 .skill {
-  padding-top: 60px;
+  padding-top: 64px;
   display: flex;
-  justify-content: space-between;
 }
 
 .skill .title__h3 {
   text-transform: uppercase;
+
+  letter-spacing: 0.03em;
 }
 
 .skill__item {
-  flex: 0 0 21%;
+  flex: 0 0 22%;
+  margin-right: 3%;
 }
 
 .skill .skill__description {
@@ -260,7 +298,7 @@ body {
 }
 
 .section__steps {
-  padding-top: 180px;
+  padding-top: 164px;
   padding-bottom: 198px;
 }
 
@@ -270,8 +308,8 @@ body {
   align-items: center;
 
   line-height: 150%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .steps__title {
@@ -293,14 +331,14 @@ body {
   height: 253px;
   position: absolute;
   left: -128px;
-  top: calc(50% - 126px);
+  top: calc(50% - 135px);
   z-index: 1;
 }
 
 .triangle {
   position: absolute;
   left: -151px;
-  top: 0;
+  top: -26px;
   z-index: 2;
 }
 
@@ -309,12 +347,16 @@ body {
   height: 106px;
   position: absolute;
   right: 38px;
-  top: calc(50% - 53px);
+  top: calc(50% - 60px);
+}
+
+.section__about {
+  padding-top: 124px;
 }
 
 .about {
   display: grid;
-  grid-template: 320px / repeat(4, 1fr);
+  grid-template: 284px / repeat(4, 1fr);
 }
 
 .about__title {
@@ -335,6 +377,11 @@ body {
   line-height: 150%;
   opacity: 0.8;
   padding: 62px 10px 62px 20px;
+}
+
+.about__item > p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-01 {
