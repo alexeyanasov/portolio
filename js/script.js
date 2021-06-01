@@ -8,4 +8,5 @@ $(function () {
       collision: "none",
     },
   });
+  $("#communicate").selectmenu();
 });
